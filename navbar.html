@@ -1,0 +1,22 @@
+<!-- navbar.html -->
+<nav class="navbar">
+  <div class="logo">LEWIS LORE</div>
+  <button class="menu-btn" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="side-menu" id="sideMenu">
+  <a href="index.html">Home</a>
+  <a href="books.html">Books</a>
+  <a href="artwork.html">Artwork</a>
+  <a href="about.html">About</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+  }
+</script>

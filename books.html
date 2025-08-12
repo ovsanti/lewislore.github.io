@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LEWIS LORE - Books</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+
+    }
+  </script>
+
+<div class="books-grid">
+  <div class="book-card" onclick="location.href='book1.html'">
+    <img src="lewislorepart1.jpg" alt="Book 1 Cover" />
+    <h2>LEWIS LORE PART I: THE RED RIDERS</h2>
+    <p>When the dead begin to ride again, only those who dare to confront the darkness can save what remains.</p>
+  </div>
+
+  <div class="book-card" onclick="location.href='book2.html'">
+    <img src="lewislorepart2.jpg" alt="Book 2 Cover" />
+    <h2>LEWIS LORE PART II: SOULS OF SILICON</h2>
+    <p>A creation meant to carry a legacy becomes a shadow of something far more dangerous.</p>
+  </div>
+
+  <div class="book-card">
+    <img src="images/book3-cover.jpg" alt="Book 3 Cover" />
+    <h2>COMING SOON: LEWIS LORE PART III: THE PHANTOM PAIN</h2>
+    <p>Where the shore meets the unknown, a phantom with unmatched strength prepares to reshape the world.</p>
+  </div>
+
+  <div class="book-card">
+    <img src="images/book4-cover.jpg"/>
+    <h2>COMING SOON: LEWIS IV: RECONNECT THE DEAD</h2>
+    <p>this sypnosis is already a spoiler, skull emoji</p>
+  </div>
+  <!-- Add more book cards as needed -->
+</div>
+
+    
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">LEWIS LORE</div>
+    <button class="menu-btn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="sideMenu">
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="artwork.html">Artwork</a>
+    <a href="about.html">About</a>
+  </div>
+</html>
