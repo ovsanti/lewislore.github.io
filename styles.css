@@ -189,13 +189,15 @@ body::before {
 
 .gallery-card img {
   width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+  height: 400px; /* fixed height for uniformity */
+  object-fit: contain; /* shows the full image */
+  background-color: #f5f5f5; /* fills the empty space around the image */
   border-radius: 20px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   margin-bottom: 1rem;
   display: block;
 }
+
 
 .gallery-card p {
   font-size: 1.1rem;
