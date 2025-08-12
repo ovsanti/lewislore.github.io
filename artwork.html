@@ -8,10 +8,17 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
- 
+
   <div style="height: 70px;"></div>
+  
   <h1 style="text-align: center; margin-top: 40px;">ARTWORK MADE BY JORDAN & DJ</h1>
- <nav class="navbar">
+  
+  <!-- Search input directly below the heading -->
+  <div style="text-align: center; margin: 1rem 0;">
+    <input type="text" id="searchBox" placeholder="Search beautiful artworks..." onkeyup="searchGallery()" style="padding: 0.5rem 1rem; font-size: 1rem; width: 250px; border-radius: 8px; border: 1px solid #ccc;" />
+  </div>
+  
+  <nav class="navbar">
     <div class="logo">LEWIS LORE</div>
     <button class="menu-btn" onclick="toggleMenu()">
       <span></span>
@@ -27,99 +34,89 @@
     <a href="about.html">About</a>
   </div>
 
-  <!-- Rest of your page content -->
+  <!-- Single gallery grid wrapping all cards -->
   <div class="gallery-grid">
-  <div class="gallery-card">
-    <h2>Lewis (Part I)</h2>
-    <img src="lewis_part1_character.jpg" alt="Lewis (Part I)" />
-    <p>A lone nomad on the search for identity and purpose.</p>
+    <div class="gallery-card">
+      <h2>Lewis (Part I)</h2>
+      <img src="lewis_part1_character.jpg" alt="Lewis (Part I)" />
+      <p>A lone nomad on the search for identity and purpose.</p>
+    </div>
+
+    <div class="gallery-card">
+      <h2>Lewis (Part II)</h2>
+      <img src="lewis_part2_character.jpg" alt="Lewis (Part II)" />
+      <p>After the events, Lewis struggles to find his place in a world that has changed around him.</p>
+    </div>
+
+    <div class="gallery-card">
+      <h2>Mekhi (Part I)</h2>
+      <img src="mekhi_part1_character.jpg" alt="Mekhi (Part I)" />
+      <p>Mekhi is a strong warrior with a traumatic past, seeking revenge against those who wronged him.</p>
+    </div>
+
+    <div class="gallery-card">
+      <h2>Mekhi (Part II)</h2>
+      <img src="mekhi_part2_character.jpg" alt="Mekhi (Part II)" />
+      <p>Mekhi's journey continues as he faces new challenges and uncovers deeper truths about his past.</p>
+    </div>
+
+    <div class="gallery-card">
+      <h2>Santi (Part I)</h2>
+      <img src="santi_part1_character.jpg" alt="Santi (Part I)" />
+      <p>Santi is a skilled detective who has been assigned a new case involving a frequent earthquake, not knowing the true nature of the forces at play.</p>
+    </div>
+
+    <div class="gallery-card">
+      <h2>Santi (Part II)</h2>
+      <img src="santi_part2_character.jpg" alt="Santi (Part II)" />
+      <p>Santi's detective skills come into play as a assassination of an important figure shakes the city, alongside rising tensions of his own intimate relationship.</p>
+    </div>
+
+    <div class="gallery-card">
+      <h2>Drago (Part I)</h2>
+      <img src="drago_part1_character.jpg" alt="Drago (Part I)" />
+      <p>Emperor Drago rose from the ashes of a fallen empire, determined to reclaim the throne and restore the once thriving planet of Warsaw.</p>
+    </div>
+
+    <div class="gallery-card">
+      <h2>Drago (Part II)</h2>
+      <img src="drago_part2_character.jpg" alt="Drago (Part II)" />
+      <p>Continuing his empire's legacy, Drago faces a new threat from a familiar figure in his past.</p>
+    </div>
+
+    <div class="gallery-card">
+      <h2>Ashton (Part I)</h2>
+      <img src="ashton_part1_character.jpg" alt="Ashton (Part I)" />
+      <p>Ashton comes from a magic school, specializing in hallucination manipulation.</p>
+    </div>
+
+    <div class="gallery-card">
+      <h2>Ashton (Part II)</h2>
+      <img src="ashton_part2_character.jpg" alt="Ashton (Part II)" />
+      <p>Ashton comes from a magic school, specializing in hallucination manipulation.</p>
+    </div>
   </div>
 
-  <div class="gallery-grid">
-  <div class="gallery-card">
-    <h2>Lewis (Part II)</h2>
-    <img src="lewis_part2_character.jpg" alt="Lewis (Part II)" />
-    <p>After the events, Lewis struggles to find his place in a world that has changed around him.</p>
-  </div>
-
-  <div class="gallery-grid">
-  <div class="gallery-card">
-    <h2>Mekhi (Part I)</h2>
-    <img src="mekhi_part1_character.jpg" alt="Mekhi (Part I)" />
-    <p>Mekhi is a strong warrior with a traumatic past, seeking revenge against those who wronged him.</p>
-  </div>
- <div class="gallery-grid">
-  <div class="gallery-card">
-    <h2>Mekhi (Part I)</h2>
-    <img src="mekhi_part2_character.jpg" alt="Mekhi (Part II)" />
-    <p>Mekhi's journey continues as he faces new challenges and uncovers deeper truths about his past.</p>
-  </div>
-
- <div class="gallery-grid">
-  <div class="gallery-card">
-    <h2>Santi (Part I)</h2>
-    <img src="santi_part1_character.jpg" alt="Santi (Part I)" />
-    <p>Santi is a skilled detective who has been assigned a new case involving a frequent earthquake, not knowing the true nature of the forces at play.</p>
-  </div>
-
- <div class="gallery-grid">
-  <div class="gallery-card">
-    <h2>Santi (Part II)</h2>
-    <img src="santi_part2_character.jpg" alt="Santi (Part II)" />
-    <p>Santi's detective skills come into play as a assassination of an important figure shakes the city, alongside rising tensions of his own intimate relationship.</p>
-  </div>
-
- <div class="gallery-grid">
-  <div class="gallery-card">
-    <h2>Drago (Part I)</h2>
-    <img src="drago_part1_character.jpg" alt="Drago (Part I)" />
-    <p>Emperor Drago rose from the ashes of a fallen empire, determined to reclaim the throne and restore the once thriving planet of Warsaw.</p>
-  </div>
-
- <div class="gallery-grid">
-  <div class="gallery-card">
-    <h2>Drago (Part II)</h2>
-    <img src="drago_part2_character.jpg" alt="Drago (Part II)" />
-    <p>Continuing his empire's legacy, Drago faces a new threat from a familiar figure in his past.</p>
-  </div>
-
-  <div class="gallery-grid">
-   <div class="gallery-card">
-    <h2>Ashton (Part I)</h2>
-    <img src="ashton_part1_character.jpg" alt="Ashton (Part I)" />
-    <p>Ashton comes from a magic school, specializing in hallucination manipulation.</p>
-  </div>
-
- <div class="gallery-grid">
-   <div class="gallery-card">
-    <h2>Ashton (Part II)</h2>
-    <img src="ashton_part2_character.jpg" alt="Ashton (Part II)" />
-    <p>Ashton comes from a magic school, specializing in hallucination manipulation.</p>
-  </div>
-  
-<input type="text" id="searchBox" placeholder="Search artworks..." onkeyup="searchGallery()">
-
- <script>
+  <script>
     function toggleMenu() {
       document.getElementById("sideMenu").classList.toggle("active");
     }
 
-function searchGallery() {
-  let input = document.getElementById("searchBox").value.toLowerCase();
-  let cards = document.querySelectorAll(".gallery-card");
+    function searchGallery() {
+      let input = document.getElementById("searchBox").value.toLowerCase();
+      let cards = document.querySelectorAll(".gallery-card");
 
-  cards.forEach(card => {
-    let title = card.querySelector("h2").textContent.toLowerCase();
-    let description = card.querySelector("p").textContent.toLowerCase();
+      cards.forEach(card => {
+        let title = card.querySelector("h2").textContent.toLowerCase();
+        let description = card.querySelector("p").textContent.toLowerCase();
 
-    if (title.includes(input) || description.includes(input)) {
-      card.style.display = "";
-    } else {
-      card.style.display = "none";
+        if (title.includes(input) || description.includes(input)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
     }
-  });
-}
   </script>
-
 </body>
 </html>
