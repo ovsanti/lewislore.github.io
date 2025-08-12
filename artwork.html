@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LEWIS LORE - Artwork</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Placeholder where navbar will be inserted -->
+  <div id="navbar-placeholder"></div>
+
+  <script>
+    // Insert navbar HTML into placeholder div
+    document.getElementById('navbar-placeholder').innerHTML = `
+      <nav class="navbar">
+        <div class="logo">LEWIS LORE</div>
+        <button class="menu-btn" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    `;
+
+    // Your existing toggleMenu function
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+    }
+  </script>
+
+  <!-- Rest of your page content -->
+  <div class="gallery-grid">
+  <div class="gallery-card">
+    <h2>Lewis (Part I)</h2>
+    <img src="lewis_part1_character.jpg" alt="Lewis (Part I)" />
+    <p>A lone nomad on the search for identity and purpose.</p>
+  </div>
+
+  <div class="gallery-grid">
+  <div class="gallery-card">
+    <h2>Lewis (Part II)</h2>
+    <img src="lewis_part2_character.jpg" alt="Lewis (Part II)" />
+    <p>After the events, Lewis struggles to find his place in a world that has changed around him.</p>
+  </div>
+
+  <div class="gallery-grid">
+  <div class="gallery-card">
+    <h2>Mekhi (Part I)</h2>
+    <img src="mekhi_character.jpg" alt="Mekhi (Part I)" />
+    <p></p>
+  </div>
+
+</body>
+</html>

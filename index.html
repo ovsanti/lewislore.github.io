@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LEWIS LORE - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>..LEWIS LORE HOME </h1>
+  <h1>WELCOME TO LEWIS LORE!</h1>
+  <h2>NEWS</h2>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">LEWIS LORE</div>
+    <button class="menu-btn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="sideMenu">
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="artwork.html">Artwork</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- Main Content -->
+ <div class="book-card">
+    <img src="lewislorepart2.jpg" alt="Book 2 Cover" />
+    <h3> NEW BOOK COMING SOON! </h3>
+    <h2>LEWIS LORE PART II: SOULS OF SILICON</h2>
+    <p>A creation meant to carry a legacy becomes a shadow of something far more dangerous.</p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
