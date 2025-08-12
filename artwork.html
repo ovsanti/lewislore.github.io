@@ -8,28 +8,24 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+ 
+  <div style="height: 70px;"></div>
+  <h1 style="text-align: center; margin-top: 40px;">ARTWORK MADE BY JORDAN & DJ</h1>
+ <nav class="navbar">
+    <div class="logo">LEWIS LORE</div>
+    <button class="menu-btn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-  <!-- Placeholder where navbar will be inserted -->
-  <div id="navbar-placeholder"></div>
-
-  <script>
-    // Insert navbar HTML into placeholder div
-    document.getElementById('navbar-placeholder').innerHTML = `
-      <nav class="navbar">
-        <div class="logo">LEWIS LORE</div>
-        <button class="menu-btn" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </nav>
-    `;
-
-    // Your existing toggleMenu function
-    function toggleMenu() {
-      document.getElementById("sideMenu").classList.toggle("active");
-    }
-  </script>
+  <div class="side-menu" id="sideMenu">
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="artwork.html">Artwork</a>
+    <a href="about.html">About</a>
+  </div>
 
   <!-- Rest of your page content -->
   <div class="gallery-grid">
@@ -100,6 +96,30 @@
     <img src="ashton_part2_character.jpg" alt="Ashton (Part II)" />
     <p>Ashton comes from a magic school, specializing in hallucination manipulation.</p>
   </div>
+  
+<input type="text" id="searchBox" placeholder="Search artworks..." onkeyup="searchGallery()">
+
+ <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+    }
+
+function searchGallery() {
+  let input = document.getElementById("searchBox").value.toLowerCase();
+  let cards = document.querySelectorAll(".gallery-card");
+
+  cards.forEach(card => {
+    let title = card.querySelector("h2").textContent.toLowerCase();
+    let description = card.querySelector("p").textContent.toLowerCase();
+
+    if (title.includes(input) || description.includes(input)) {
+      card.style.display = "";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+  </script>
 
 </body>
 </html>
